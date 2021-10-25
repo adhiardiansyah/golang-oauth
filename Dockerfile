@@ -10,7 +10,7 @@ COPY helper ./helper
 COPY templates ./templates
 COPY user ./user
 
-RUN go build -o /golang-oauth
+RUN go run main.go
 
 EXPOSE 3000
 
