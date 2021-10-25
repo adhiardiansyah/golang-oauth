@@ -8,4 +8,4 @@ Penjelasan alur aplikasi:
 
 4. Setelah proses sign in berhasil, user dapat mengakses data profil yang melalui end point "/user". Tentunya endpoint ini terdapat middleware dengan menyertakan Authorization Bearer "token" pada request header.
 
-Dockerize dan implement CI/CD :
+Dockerize dan implement CI/CD : docker pull adhiardiansyah/golang-oauth
