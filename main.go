@@ -14,7 +14,8 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
+
+	// "github.com/joho/godotenv"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	"gorm.io/driver/postgres"
@@ -22,10 +23,10 @@ import (
 )
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal(err.Error())
-	}
+	// err := godotenv.Load()
+	// if err != nil {
+	// 	log.Fatal(err.Error())
+	// }
 
 	googleOauthConfig := &oauth2.Config{
 		Scopes:       []string{"https://www.googleapis.com/auth/userinfo.email"},
