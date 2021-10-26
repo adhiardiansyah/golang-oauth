@@ -14,7 +14,7 @@ services:
       - fullstack
     volumes:
       - database_postgres:/var/lib/postgres/data
-  
+
   web:
     build: .
     container_name: "golang-oauth"
